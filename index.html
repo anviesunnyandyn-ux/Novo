@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Translate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <p class="tag">Novo Translate</p>
+      <h1>Tradutor simples com voz</h1>
+      <p>Digite um texto, escolha o idioma e gere uma traducao rapida.</p>
+    </section>
+
+    <section class="card">
+      <div class="langs">
+        <label>De
+          <select id="sourceLang">
+            <option value="auto">Automatico</option>
+            <option value="pt">Portugues</option>
+            <option value="en">Ingles</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Frances</option>
+          </select>
+        </label>
+        <button id="swapLanguages" type="button">Trocar</button>
+        <label>Para
+          <select id="targetLang">
+            <option value="en">Ingles</option>
+            <option value="pt">Portugues</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Frances</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="grid">
+        <div>
+          <h2>Texto</h2>
+          <textarea id="inputText" placeholder="Digite aqui"></textarea>
+          <button id="translateButton" class="primary" type="button">Traduzir</button>
+          <button id="clearInput" type="button">Limpar</button>
+          <button id="speakInput" type="button">Ouvir</button>
+        </div>
+        <div>
+          <h2>Resultado</h2>
+          <textarea id="outputText" readonly placeholder="Resultado"></textarea>
+          <p id="status">Pronto</p>
+          <button id="copyOutput" type="button">Copiar</button>
+          <button id="speakOutput" type="button">Ouvir</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
